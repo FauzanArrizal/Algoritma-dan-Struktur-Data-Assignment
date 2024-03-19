@@ -196,7 +196,8 @@ int main() {
 }
 ```
 #### Output:
-![Screenshot (334)](https://github.com/FauzanArrizal/Laprak-Modul-1/assets/161549586/626e955f-fb5f-46a3-b183-17a5bd573440)
+![Screenshot (334)](https://github.com/FauzanArrizal/Algoritma-dan-Struktur-Data-Assignment/assets/161549586/6f588d7f-ae67-4288-acbb-87f7921b3dc0)
+
 
 Penjelasan:
 
@@ -232,7 +233,8 @@ int main() {
 }
 ```
 Output:
-![Screenshot (341)](https://github.com/FauzanArrizal/Laprak-Modul-1/assets/161549586/5d7edad5-c2cd-4f39-a8d5-ebd4df8c17fc)
+![Screenshot (349)](https://github.com/FauzanArrizal/Algoritma-dan-Struktur-Data-Assignment/assets/161549586/d002f1ed-d66a-4bbe-be3d-8a9200266e20)
+
 
 Penjelasan:
 
@@ -268,7 +270,7 @@ int main() {
 }
 ```
 Output:
-![Screenshot (342)](https://github.com/FauzanArrizal/Laprak-Modul-1/assets/161549586/6a3010ae-b0ab-4459-ab63-3d199d700eef)
+![Screenshot (342)](https://github.com/FauzanArrizal/Algoritma-dan-Struktur-Data-Assignment/assets/161549586/451cad0b-1e23-4ef4-9971-66778ca5f8b6)
 
 Penjelasan:
 'struct Point' Mendefinisikan struct Point dengan dua variabel bertipe integer, yaitu x dan y.
@@ -298,7 +300,7 @@ int main() {
 }
 ```
 #### Output:
-![Screenshot (344)](https://github.com/FauzanArrizal/Laprak-Modul-1/assets/161549586/17a4db54-32f6-4559-8a0e-ff3f18817881)
+![Screenshot (344)](https://github.com/FauzanArrizal/Algoritma-dan-Struktur-Data-Assignment/assets/161549586/3ab8d2ef-fdad-46cb-bf26-47386e67712f)
 
 Penjelasan:
 
