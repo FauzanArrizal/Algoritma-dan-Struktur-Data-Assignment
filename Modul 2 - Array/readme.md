@@ -18,12 +18,12 @@ Array dapat memiliki banyak nilai, sedangkan tipe data lain hanya terhubung deng
 
 #### 4. Kelebihan dan Kekurangan Array
 ##### Kelebihan:
-- Array sangat cocok untuk pengaksesan acak. Sembarang di array dapat diacu secara langsung tanpa melaui elemen-elemen lain.
-- Jika berada di suatu lokasi, maka sangat mudah menelusuri ke elemen-elemen tetangga, baik elemen pendahulu maupun elemen penerus.
+- Array sangat cocok untuk pengaksesan acak. Sembarang di array dapat diacu secara langsung tanpa melaui elemen-elemen lain[4].
+- Jika berada di suatu lokasi, maka sangat mudah menelusuri ke elemen-elemen tetangga, baik elemen pendahulu maupun elemen penerus[4].
 - Jika elemen array adalah nilai independen dan seluruhnya harus terjaga, maka penggunaan penyimpanannya sangat efisien[4].
 
 ##### Kekurangan:
-- Array harus bertipe homogen, tidak dapat mempunyai array yang berbeda-beda tipe dalam satu array.
+- Array harus bertipe homogen, tidak dapat mempunyai array yang berbeda-beda tipe dalam satu array[4].
 - Banyak bahasa pemrograman yang menerapkan array statik yang sulit dirubah ukurannya pada waktu eksekusi. Bila penambahan dan pengurangan terjadi terus menerus, maka representasi statis tidak efisien dalam penggunaan memori[4]. 
 
 ## Guided 
