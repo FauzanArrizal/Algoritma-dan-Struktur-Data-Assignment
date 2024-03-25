@@ -221,7 +221,7 @@ int main() {
     cout << "Masukkan tinggi array: ";
     cin >> height;
 
-    // Deklarasi Array //
+    // Deklarasi Array
     int array[length][width][height];
 
     // Input Elemen
@@ -298,6 +298,7 @@ using namespace std;
 
 int main()
 {
+    // Deklarasi
     int maks, a, i = 1, lokasi;
     cout << "Masukkan Panjang array: ";
     cin >> a;
