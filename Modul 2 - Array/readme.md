@@ -18,12 +18,12 @@ Array dapat memiliki banyak nilai, sedangkan tipe data lain hanya terhubung deng
 
 #### 4. Kelebihan dan Kekurangan Array
 ##### Kelebihan:
-- Array sangat cocok untuk pengaksesan acak. Sembarang di array dapat diacu secara langsung tanpa melaui elemen-elemen lain.
-- Jika berada di suatu lokasi, maka sangat mudah menelusuri ke elemen-elemen tetangga, baik elemen pendahulu maupun elemen penerus.
+- Array sangat cocok untuk pengaksesan acak. Sembarang di array dapat diacu secara langsung tanpa melaui elemen-elemen lain[4].
+- Jika berada di suatu lokasi, maka sangat mudah menelusuri ke elemen-elemen tetangga, baik elemen pendahulu maupun elemen penerus[4].
 - Jika elemen array adalah nilai independen dan seluruhnya harus terjaga, maka penggunaan penyimpanannya sangat efisien[4].
 
 ##### Kekurangan:
-- Array harus bertipe homogen, tidak dapat mempunyai array yang berbeda-beda tipe dalam satu array.
+- Array harus bertipe homogen, tidak dapat mempunyai array yang berbeda-beda tipe dalam satu array[4].
 - Banyak bahasa pemrograman yang menerapkan array statik yang sulit dirubah ukurannya pada waktu eksekusi. Bila penambahan dan pengurangan terjadi terus menerus, maka representasi statis tidak efisien dalam penggunaan memori[4]. 
 
 ## Guided 
@@ -133,6 +133,7 @@ using namespace std;
 
 int main()
 {
+    //Deklarasi
     int genap[100], ganjil[100], jumlah_genap = 0, jumlah_ganjil = 0, a, i = 1;
     cout << "Masukkan panjang array: ";
     cin >> a;
@@ -186,7 +187,7 @@ Penjelasan:
 - `int genap[100], ganjil[100], jumlah_genap = 0, jumlah_ganjil = 0, a, i = 1;`: Mendeklarasikan beberapa variabel berupa integer yang akan digunakan untuk menyimpan data angka genap, ganjil, jumlah angka genap, jumlah angka ganjil dan panjang array.
 - `cout << "Masukkan panjang array: ";`: Menampilkan output ke layar untuk meminta panjang array ke pengguna.
 - `cin >> a;`: Meminta input pengguna untuk memasukkan panjang array.
-- `int array[a];`: Mendeklarasikan array dengan panjang yang telah diinpus pengguna.
+- `int array[a];`: Mendeklarasikan array dengan panjang yang telah diinput pengguna.
 - `cout << "Masukkan " << a << " angka:\n";`: Menampilkan output ke layar untuk meminta angka-angka ke pengguna.
 - `for (i = 0; i < a; i++)`: Melakukan perulangan untuk meminta dan menyimpan angka-angka ke dalam array.
 - `cout << "Array ke-" << (i) << ": ";`: Menampilkan output ke layar untuk meminta angka yang akan disimpan ke dalam array.
