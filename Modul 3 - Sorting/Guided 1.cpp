@@ -42,5 +42,3 @@ int main() {
     cout << "\nUrutan bilangan setelah sorting: " << endl;
     print_array(a, length);
 }
-
-// edit
