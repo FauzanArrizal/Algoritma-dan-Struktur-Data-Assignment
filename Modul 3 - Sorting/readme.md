@@ -72,7 +72,11 @@ int main() {
     print_array(a, length);
 }
 ```
-Program ...
+Program tersebut menggunakan algoritma Bubble Sort. Dalam program ini, terdapat fungsi `bubble_sort` yang menerima array bilangan bertipe double dan panjang array sebagai parameter. Fungsi ini menggunakan pendekatan Bubble Sort untuk mengurutkan elemen-elemen array secara ascending. Variabel `not_sorted` digunakan sebagai penanda apakah array masih dalam keadaan terurut atau tidak.
+
+Selain itu, terdapat fungsi `print_array` yang digunakan untuk mencetak elemen-elemen array. Di dalam fungsi `main`, sebuah array `a` yang berisi bilangan double diinisialisasi, kemudian array tersebut dicetak sebelum proses sorting. Setelah itu, fungsi `bubble_sort` dipanggil untuk mengurutkan array, dan hasilnya dicetak kembali setelah proses sorting selesai.
+
+Dengan menggunakan algoritma Bubble Sort dalam program ini, elemen-elemen array disusun ulang hingga terurut secara ascending. Program ini memberikan contoh konkret bagaimana Bubble Sort dapat diimplementasikan dalam pengurutan array bilangan double.
 
 
 ### 2. Mengurutkan karakter secara descending (dari terbesar hingga terkecil) menggunakan Algoritma Insertion Sort
@@ -119,7 +123,11 @@ int main() {
     print_array(a, length);
 }
 ```
-Program...
+Program tersebut menggunakan algoritma Insertion Sort. Dalam program ini, terdapat fungsi `insertion_sort` yang menerima array karakter dan panjang array sebagai parameter. Fungsi ini mengimplementasikan algoritma Insertion Sort untuk mengurutkan karakter-karakter dalam array. Proses pengurutan dilakukan dengan membandingkan karakter pada indeks saat ini dengan karakter sebelumnya, kemudian menukar posisi jika diperlukan sehingga array menjadi terurut.
+
+Selain itu, terdapat fungsi `print_array` yang digunakan untuk mencetak elemen-elemen array. Di dalam fungsi `main`, sebuah array `a` yang berisi karakter diinisialisasi, kemudian array tersebut dicetak sebelum proses sorting. Setelah itu, fungsi `insertion_sort` dipanggil untuk mengurutkan array karakter, dan hasilnya dicetak kembali setelah proses sorting selesai.
+
+Dengan menggunakan algoritma Insertion Sort dalam program ini, karakter-karakter dalam array disusun ulang hingga terurut sesuai urutan yang benar. Insertion Sort dapat diimplementasikan dalam pengurutan array karakter.
 
 ## Unguided 
 
