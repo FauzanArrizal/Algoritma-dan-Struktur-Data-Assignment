@@ -72,12 +72,31 @@ int main() {
     print_array(a, length);
 }
 ```
-Program tersebut menggunakan algoritma Bubble Sort. Dalam program ini, terdapat fungsi `bubble_sort` yang menerima array bilangan bertipe double dan panjang array sebagai parameter. Fungsi ini menggunakan pendekatan Bubble Sort untuk mengurutkan elemen-elemen array secara ascending. Variabel `not_sorted` digunakan sebagai penanda apakah array masih dalam keadaan terurut atau tidak.
+
+### Penjelasan Program
+Program ini menggunakan algoritma Bubble Sort. Dalam program ini, terdapat fungsi `bubble_sort` yang menerima array bilangan bertipe double dan panjang array sebagai parameter. Fungsi ini menggunakan pendekatan Bubble Sort untuk mengurutkan elemen-elemen array secara ascending. Variabel `not_sorted` digunakan sebagai penanda apakah array masih dalam keadaan terurut atau tidak.
 
 Selain itu, terdapat fungsi `print_array` yang digunakan untuk mencetak elemen-elemen array. Di dalam fungsi `main`, sebuah array `a` yang berisi bilangan double diinisialisasi, kemudian array tersebut dicetak sebelum proses sorting. Setelah itu, fungsi `bubble_sort` dipanggil untuk mengurutkan array, dan hasilnya dicetak kembali setelah proses sorting selesai.
 
 Dengan menggunakan algoritma Bubble Sort dalam program ini, elemen-elemen array disusun ulang hingga terurut secara ascending. Program ini memberikan contoh konkret bagaimana Bubble Sort dapat diimplementasikan dalam pengurutan array bilangan double.
 
+### Kompleksitas
+
+#### Kompleksitas Waktu:
+
+- Pada kasus terbaik, waktu yang dibutuhkan adalah O(n) ketika array sudah terurut dan tidak ada pertukaran yang dilakukan.
+- Pada kasus terburuk, waktu yang dibutuhkan adalah O(n^2) ketika array terurut terbalik, sehingga pertukaran dilakukan pada setiap iterasi.
+- Rata-rata waktu yang dibutuhkan adalah O(n^2) karena algoritma ini memiliki kinerja yang buruk pada data yang besar.
+
+#### Komplesitas Ruang:
+
+- Algoritma bubble sort memiliki kompleksitas ruang O(1) karena hanya menggunakan konstanta ruang tambahan untuk variabel sementara seperti `tmp`, `not_sorted`, dan `j`, tidak tergantung pada ukuran masukan.
+
+##### Bubble sort bekerja dengan membandingkan dua elemen berturut-turut dan menukar mereka jika diperlukan untuk mengurutkan array. Saat iterasi berjalan, elemen-elemen yang lebih besar bergerak ke arah kanan, seperti gelembung yang naik ke atas.
+
+##### Meskipun sederhana, bubble sort tidak efisien untuk data yang besar karena kompleksitas waktu rata-rata dan terburuknya adalah O(n^2), memerlukan banyak pertukaran.
+
+##### Algoritma ini cocok untuk penggunaan pada jumlah elemen yang sedikit atau hampir terurut, tetapi tidak disarankan untuk digunakan pada data yang besar karena kinerjanya yang lambat.
 
 ### 2. Mengurutkan karakter secara descending (dari terbesar hingga terkecil) menggunakan Algoritma Insertion Sort
 
@@ -123,11 +142,30 @@ int main() {
     print_array(a, length);
 }
 ```
+### Penjelasan Program
+
 Program tersebut menggunakan algoritma Insertion Sort. Dalam program ini, terdapat fungsi `insertion_sort` yang menerima array karakter dan panjang array sebagai parameter. Fungsi ini mengimplementasikan algoritma Insertion Sort untuk mengurutkan karakter-karakter dalam array. Proses pengurutan dilakukan dengan membandingkan karakter pada indeks saat ini dengan karakter sebelumnya, kemudian menukar posisi jika diperlukan sehingga array menjadi terurut.
 
 Selain itu, terdapat fungsi `print_array` yang digunakan untuk mencetak elemen-elemen array. Di dalam fungsi `main`, sebuah array `a` yang berisi karakter diinisialisasi, kemudian array tersebut dicetak sebelum proses sorting. Setelah itu, fungsi `insertion_sort` dipanggil untuk mengurutkan array karakter, dan hasilnya dicetak kembali setelah proses sorting selesai.
 
 Dengan menggunakan algoritma Insertion Sort dalam program ini, karakter-karakter dalam array disusun ulang hingga terurut sesuai urutan yang benar. Insertion Sort dapat diimplementasikan dalam pengurutan array karakter.
+
+### Kompleksitas
+
+Kompleksitas Waktu:
+
+- Pada kasus terbaik, waktu yang dibutuhkan adalah O(n) ketika array sudah terurut karena hanya perlu memeriksa setiap elemen sekali.
+- Pada kasus terburuk, waktu yang dibutuhkan adalah O(n^2) ketika array terurut terbalik, sehingga setiap elemen harus dipindahkan ke posisi yang benar.
+- Rata-rata waktu yang dibutuhkan adalah O(n^2) karena algoritma ini melakukan banyak pertukaran saat menyisipkan elemen.
+
+Kompleksitas Ruang:
+
+- Algoritma insertion sort memiliki kompleksitas ruang O(1) karena hanya menggunakan konstanta ruang tambahan untuk variabel sementara seperti `tmp`, tidak tergantung pada ukuran masukan.
+
+##### Insertion sort bekerja dengan cara membandingkan elemen satu per satu dan menyisipkan elemen tersebut ke posisi yang tepat dalam subarray yang sudah terurut.
+##### Algoritma ini sederhana dan efisien untuk jumlah elemen yang kecil atau hampir terurut, tetapi tidak disarankan untuk digunakan pada data yang besar karena kompleksitas waktu rata-rata dan terburuknya adalah O(n^2).
+##### Kompleksitas ruangnya rendah, sehingga cocok digunakan untuk kasus di mana ketersediaan ruang tambahan sangat terbatas.
+
 
 ## Unguided 
 
@@ -135,6 +173,7 @@ Dengan menggunakan algoritma Insertion Sort dalam program ini, karakter-karakter
 
 ```C++
 #include <iostream>
+
 using namespace std;
 
 // Fungsi selection sort mengurutkan array float dari besar ke kecil
@@ -172,7 +211,7 @@ int main() {
 #### Output:
 ![Screenshot (356)](https://github.com/FauzanArrizal/Algoritma-dan-Struktur-Data-Assignment/assets/161549586/465d5f25-8412-4ce3-ab76-5084d102044c)
 
-Penjelasan:
+#### Penjelasan
 
 - `#include <iostream>` : Mendeklarasikan library input/output.
 - `using namespace std;` : Menggunakan nama dari namespace standar.
@@ -187,6 +226,22 @@ Penjelasan:
 - `cout << "IPS mahasiswa setelah diurutkan: ";`: Menampilkan pesan "IPS mahasiswa setelah diurutkan: " ke layar.
 - `cetak\_array(arr, n);`: Menampilkan isi dari array arr setelah diurutkan.
 - `return 0;`: Mengembalikan nilai 0 ke sistem operasi.
+
+#### Kompleksitas
+
+Kompleksitas Waktu:
+
+- Pada kasus terbaik, terburuk, dan rata-rata, kompleksitas waktu selection sort adalah O(n^2), di mana n adalah jumlah elemen dalam array.
+- Algoritma selection sort memerlukan dua loop bersarang untuk membandingkan dan menukar elemen, tidak memperdulikan apakah array sudah terurut atau tidak.
+
+Kompleksitas Ruang:
+
+- Algoritma selection sort memiliki kompleksitas ruang O(1) karena hanya menggunakan konstanta ruang tambahan untuk variabel sementara seperti `maxIndex`, tidak tergantung pada ukuran masukan.
+
+##### Selection sort bekerja dengan memilih elemen terbesar dari array dan menukar elemen tersebut dengan elemen di indeks tertentu. Proses ini terus berlanjut hingga seluruh array terurut.
+##### Meskipun sederhana, selection sort tidak efisien untuk jumlah elemen yang besar karena memiliki kompleksitas waktu yang tetap O(n^2) pada kasus terbaik, terburuk, dan rata-rata.
+##### Selection sort cocok digunakan pada jumlah elemen yang sedikit atau dalam kasus khusus di mana pertukaran data mahal dan memori terbatas.
+
 
 #### 2. Pak RT memiliki 10 warga dengan nama: siti, situ, sana, ana, ani, caca, cici, dida, dodo, dan dadi. Supaya mudah dalam melakukan pencarian, Pak RT akan mengurutkan namanama tersebut sesuai dengan alfabet. Buatlah program untuk membantu Pak RT dengan menggunakan algoritma Bubble Sort!
 
@@ -230,8 +285,7 @@ Output:
 ![Screenshot (357)](https://github.com/FauzanArrizal/Algoritma-dan-Struktur-Data-Assignment/assets/161549586/b070b66c-3f54-4cdd-94df-7b63813f8a94)
 
 
-
-Penjelasan:
+#### Penjelasan
 
 - `#include <iostream>` : Mendeklarasikan library input/output.
 - `using namespace std;` : Menggunakan nama dari namespace standar.
@@ -246,6 +300,24 @@ Penjelasan:
 - `cout << "Nama-nama warga setelah diurutkan: ";`: Menampilkan pesan "Nama-nama warga setelah diurutkan: " ke layar.
 - `cetak_array(arr, n);`: Menampilkan isi dari array arr setelah diurutkan.
 - `return 0;`: Mengembalikan nilai 0 ke sistem operasi.
+
+#### Kompleksitas
+
+Komplesitas Waktu:
+
+- Pada kasus terbaik, waktu yang dibutuhkan adalah O(n) ketika array sudah terurut dan tidak ada pertukaran yang dilakukan.
+- Pada kasus terburuk dan rata-rata, waktu yang dibutuhkan adalah O(n^2), di mana n adalah jumlah elemen dalam array.
+- Bubble sort pada array string membandingkan dan menukar elemen berdasarkan urutan leksikografis (berdasarkan urutan alfabet).
+
+Kompleksitas Ruang:
+
+- Bubble sort pada array string memiliki kompleksitas ruang O(1) karena hanya menggunakan konstanta ruang tambahan untuk variabel sementara seperti swap, tidak tergantung pada ukuran masukan.
+
+##### Bubble sort pada array string bekerja dengan membandingkan dan menukar elemen berdasarkan urutan leksikografis hingga seluruh array terurut.
+##### Algoritma yang sederhana dan mudah dipahami, namun tidak efisien untuk jumlah elemen yang besar karena kompleksitas waktu rata-rata dan terburuknya adalah O(n^2).
+##### Meskipun cocok untuk pengurutan string kecil, disarankan untuk menggunakan algoritma pengurutan lain seperti quicksort atau mergesort untuk data yang lebih besar karena kinerja yang lebih baik.
+
+
 
 #### 3. Buatlah program yang meminta user menginputkan suatu bilangan n dan meminta user untuk menginputkan sejumlah n karakter. Kemudian program akan melakukan sorting secara menaik (ascending) dan menurun (descending)!
 
