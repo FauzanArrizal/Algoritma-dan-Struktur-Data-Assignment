@@ -59,22 +59,22 @@ int main ()
     return 0;
 }
 ```
-int n = 10;: Ini adalah deklarasi variabel n dengan tipe data int dan nilai inisial 10. Variabel n akan digunakan untuk menyimpan jumlah elemen yang akan digunakan dalam array data.
-int data[n] = {9, 4, 1, 7, 5, 12, 4, 13, 4, 10};: Ini adalah deklarasi array data dengan tipe data int dan jumlah elemen yang sama dengan nilai n. Array data akan digunakan untuk menyimpan data yang akan dicari.
-int cari = 10;: Ini adalah deklarasi variabel cari dengan tipe data int dan nilai inisial 10. Variabel cari akan digunakan untuk menyimpan data yang akan dicari.
-bool ketemu = false;: Ini adalah deklarasi variabel ketemu dengan tipe data bool dan nilai inisial false. Variabel ketemu akan digunakan untuk menyimpan flag yang akan menunjukkan apakah data yang dicari ditemukan atau tidak.
-int i;: Ini adalah deklarasi variabel i dengan tipe data int. Variabel i akan digunakan untuk menyimpan indeks array data yang sedang diperiksa.
-for (i = 0; i < n; i++): Ini adalah perulangan for yang akan dijalankan sebanyak n kali. Perulangan ini akan mengulangi setiap elemen array data.
-if(data[i] == cari): Ini adalah percabangan yang akan dieksekusi jika data yang ada pada indeks i sama dengan data yang dicari.
-ketemu = true;: Ini adalah perintah untuk mengubah nilai variabel ketemu menjadi true jika data yang dicari ditemukan.
-break;: Ini adalah perintah untuk menghentikan perulangan for jika data yang dicari ditemukan.
-cout << "\t Program Sequential Search Sedeerhana\n" << endl;: Ini adalah perintah untuk menampilkan pesan "Program Sequential Search Sedeerhana" pada layar.
-cout << "data: {9, 4, 1, 7, 5, 12, 4, 13, 4, 10}" << endl;: Ini adalah perintah untuk menampilkan data yang tersedia pada array data pada layar.
-if (ketemu): Ini adalah percabangan yang akan dieksekusi jika nilai variabel ketemu adalah true.
-cout << "\n angka "<< cari << " ditemukan pada indeks ke- " << i << endl;: Ini adalah perintah untuk menampilkan pesan "angka [cari] ditemukan pada indeks ke- [i]" pada layar.
-else: Ini adalah percabangan yang akan dieksekusi jika nilai variabel ketemu adalah false.
-cout << cari << " tidak dapat ditemukan pada data." << endl;: Ini adalah perintah untuk menampilkan pesan "cari tidak dapat ditemukan pada data." pada layar.
-return 0;: Ini adalah perintah untuk mengakhiri program dengan nilai kembalian 0
+- `int n = 10;`: deklarasi variabel n dengan tipe data int dan nilai inisial 10. Variabel n akan digunakan untuk menyimpan jumlah elemen yang akan digunakan dalam array data.
+- `int data[n] = {9, 4, 1, 7, 5, 12, 4, 13, 4, 10};`: deklarasi array data dengan tipe data int dan jumlah elemen yang sama dengan nilai n. Array data akan digunakan untuk menyimpan data yang akan dicari.
+- `int cari = 10;`: variabel cari dengan tipe data int dan nilai inisial 10. Variabel cari akan digunakan untuk menyimpan data yang akan dicari.
+- `bool ketemu = false;`: variabel ketemu dengan tipe data bool dan nilai inisial false. Variabel ketemu akan digunakan untuk menyimpan flag yang akan menunjukkan apakah data yang dicari ditemukan atau tidak.
+- `int i;`: variabel i dengan tipe data int. Variabel i akan digunakan untuk menyimpan indeks array data yang sedang diperiksa.
+- `for (i = 0; i < n; i++)`: perulangan for yang akan dijalankan sebanyak n kali. Perulangan ini akan mengulangi setiap elemen array data.
+- `if(data[i] == cari)`: percabangan yang akan dieksekusi jika data yang ada pada indeks i sama dengan data yang dicari.
+- `ketemu = true;`:  untuk mengubah nilai variabel ketemu menjadi true jika data yang dicari ditemukan.
+- `break;`:  untuk menghentikan perulangan for jika data yang dicari ditemukan.
+- `cout << "\t Program Sequential Search Sedeerhana\n" << endl;`:  untuk menampilkan pesan "Program Sequential Search Sedeerhana" pada layar.
+- `cout << "data: {9, 4, 1, 7, 5, 12, 4, 13, 4, 10}" << endl;`: untuk menampilkan data yang tersedia pada array data pada layar.
+- `if (ketemu)`:  percabangan yang akan dieksekusi jika nilai variabel ketemu adalah true.
+- `cout << "\n angka "<< cari << " ditemukan pada indeks ke- " << i << endl;`: untuk menampilkan pesan "angka [cari] ditemukan pada indeks ke- [i]" pada layar.
+- `else`: percabangan yang akan dieksekusi jika nilai variabel ketemu adalah false.
+- `cout << cari << " tidak dapat ditemukan pada data." << endl;`: untuk menampilkan pesan "cari tidak dapat ditemukan pada data." pada layar.
+- `return 0;`: untuk mengakhiri program dengan nilai kembalian 0
 
 ### 2. Binary Search
 
@@ -150,11 +150,13 @@ int main() {
     return EXIT_SUCCESS;
 }
 ```
-Program ini adalah program C++ yang digunakan untuk mencari nilai maksimum dari suatu array. Ketika program dijalankan, user akan diminta untuk memasukkan panjang array. Setelah itu, user akan diminta untuk memasukkan elemen-elemen array. Kemudian, program akan menentukan nilai maksimum dari array tersebut dan lokasinya (index). Nilai maksimum dan lokasinya akan ditampilkan ke layar saat program selesai dieksekusi. Variabel yang digunakan dalam program ini antara lain `maks`, `a`, `i`dan `lokasi`. `maks` digunakan untuk menyimpan nilai maksimum, `a` digunakan untuk menyimpan panjang array, `i` digunakan sebagai indeks array, dan `lokasi` digunakan untuk menyimpan lokasi dari nilai maksimum. Perulangan `for` digunakan untuk melakukan iterasi pada setiap elemen di array, dan operasi penugasan digunakan untuk mengupdate nilai maksimum jika elemen tersebut lebih besar.
+Program ini menggunakan algoritma selection sort dan binary search untuk mengurutkan dan mencari `data` dalam array data. Pengguna dapat memasukkan data yang ingin dicari, dan program akan menampilkan data yang telah diurutkan dan menunjukkan indeks dari data yang dicari.
+
 
 ## Unguided 
 
 #### 1. Buatlah sebuah program untuk mencari sebuah huruf pada sebuah kalimat yang sudah di input dengan menggunakan Binary Search!
+
 ```C++
 #include <iostream>
 #include <string>
@@ -202,29 +204,17 @@ int main() {
 
 Penjelasan:
 
-- `#include <iostream>` : Mendeklarasikan library input/output.
-- `using namespace std;` : Menggunakan nama dari namespace standar.
-- `int main()` : Memulai blok kode utama.
-- `int genap[100], ganjil[100], jumlah_genap = 0, jumlah_ganjil = 0, a, i = 1;`: Mendeklarasikan beberapa variabel berupa integer yang akan digunakan untuk menyimpan data angka genap, ganjil, jumlah angka genap, jumlah angka ganjil dan panjang array.
-- `cout << "Masukkan panjang array: ";`: Menampilkan output ke layar untuk meminta panjang array ke pengguna.
-- `cin >> a;`: Meminta input pengguna untuk memasukkan panjang array.
-- `int array[a];`: Mendeklarasikan array dengan panjang yang telah diinput pengguna.
-- `cout << "Masukkan " << a << " angka:\n";`: Menampilkan output ke layar untuk meminta angka-angka ke pengguna.
-- `for (i = 0; i < a; i++)`: Melakukan perulangan untuk meminta dan menyimpan angka-angka ke dalam array.
-- `cout << "Array ke-" << (i) << ": ";`: Menampilkan output ke layar untuk meminta angka yang akan disimpan ke dalam array.
-- `cin >> array[i];`: Meminta input pengguna untuk memasukkan angka dan menyimpan ke dalam array pada index ke-i.
-- `cout << "Data Array: ";`: Menampilkan output ke layar untuk menampilkan data yang telah disimpan dalam array.
-- `for (i = 0; i < a; i++)`: Melakukan perulangan untuk menampilkan data yang telah disimpan dalam array.
-- `cout << array[i] << " ";`: Menampilkan data yang tersimpan pada index ke-i ke layar.
-- `cout << "\n";`: Menampilkan output baris baru ke layar.
-- `for (i = 0; i < a; i++)`: Melakukan perulangan untuk memisahkan angka genap dan ganjil.
-- `if (array[i] % 2 == 0)`: Melakukan pengecekan apakah data pada index ke-i adalah bilangan genap atau ganjil.
-- `genap[jumlah_genap] = array[i];`: Menyimpan data yang terdapat pada index ke-i ke dalam array genap jika data tersebut adalah bilangan genap.
-- `jumlah_genap++;`: Menambahkan 1 ke variabel jumlah_genap setelah data genap diproses.
-- `ganjil[jumlah_ganjil] = array[i];`: Menyimpan data yang terdapat pada index ke-i ke dalam array ganjil jika data tersebut adalah bilangan ganjil.
-- `jumlah_ganjil++;`: Menambahkan 1 ke variabel jumlah_ganjil setelah data ganjil diproses.
-- `cout << "\nNomor genap: ";`: Menampilkan output ke layar untuk menampilkan angka-angka genap.
-- `for (i = 0; i < jumlah_genap; i++)`: Melakukan perulangan untuk menampilkan angka-angka genap.
+- `int main()` : deklarasi fungsi utama dari program C++.
+- `string str;, char cariChar;, dan int indeks;`: variabel lokal dalam fungsi main(). Variabel str adalah string yang akan digunakan untuk menyimpan input dari pengguna. Variabel cariChar adalah karakter yang akan dicari dalam string. Variabel indeks akan menampung hasil pencarian karakter dalam string.
+- `cout << "Masukkan kalimat: ";`: pesan yang akan dicetak ke layar, meminta pengguna untuk memasukkan kalimat.
+- `getline(cin, str);`: cara untuk membaca satu baris teks dari input pengguna menggunakan getline(). Teks yang dimasukkan akan disimpan dalam variabel str.
+- `if (str.empty())`: percabangan kondisional. Memeriksa apakah string yang dimasukkan oleh pengguna kosong atau tidak menggunakan metode empty() dari objek string str.
+- `cout << "Kalimat kosong. Stop Program";`: Jika string kosong, pesan ini akan dicetak ke layar.
+- `return 1;`: mengembalikan nilai 1 dari fungsi main(), yang menandakan bahwa program berhenti karena ada kesalahan.
+- `cout << "Masukkan huruf yang ingin dicari: ";`: pesan yang meminta user untuk memasukkan karakter yang ingin dicari dalam kalimat.
+- `cin >> cariChar;`: cara untuk membaca satu karakter dari input pengguna menggunakan cin. Karakter yang dimasukkan akan disimpan dalam variabel cariChar.
+- `indeks = binarysearch(str, cariChar);`: pemanggilan fungsi binarysearch dengan argumen str (kalimat yang dimasukkan oleh pengguna) dan cariChar (karakter yang ingin dicari dalam kalimat).
+- `return 0;`: mengembalikan nilai 0 dari fungsi main(), menandakan bahwa program berakhir dengan sukses.
 
 #### 2. Buatlah sebuah program yang dapat menghitung banyaknya hurufvocal dalam sebuah kalimat!
 
@@ -275,31 +265,23 @@ Output:
 
 Penjelasan:
 
-- `#include <iostream>` : Mendeklarasikan library input/output.
-- `using namespace std;` : Menggunakan nama dari namespace standar.
-- `int main()` : Memulai blok kode utama.
-- `int length, width, height;`: Mendeklarasikan tiga variabel `length`, `width`, dan `height` dengan tipe `int`.
-- `cout << "Masukkan panjang array: ";`: Menampilkan tulisan "Masukkan panjang array: " ke layar.
-- `cin >> length;`: Meminta input dari pengguna dan menyimpannya pada variabel `length`.
-- `cout << "Masukkan lebar array: ";`: Menampilkan tulisan "Masukkan lebar array: " ke layar.
-- `cin >> width;`: Meminta input dari pengguna dan menyimpannya pada variabel `width`.
-- `cout << "Masukkan tinggi array: ";`: Menampilkan tulisan "Masukkan tinggi array: " ke layar
-- `cin >> height;`: Meminta input dari pengguna dan menyimpannya pada variabel `height`
-- `int array[length][width][height];`: Mendeklarasikan dan menginisialisasi array 3 dimensi dengan nama array.
-- `for (int x = 0; x < length; x++)`: Memulai perulangan `for` dengan nama variabel `x` dan batas `length`.
-- `for (int y = 0; y < width; y++)`: Memulai perulangan `for` dengan nama variabel `y` dan batas `width`.
-- `for (int z = 0; z < height; z++)`: Memulai perulangan `for` dengan nama variabel `z` dan batas `height`.
-`cout << "Input Array[" << x << "][" << y << "][" << z << "] = ";`: Menampilkan tulisan "Input Array[x][y][z] = " ke layar.
-- `cin >> array[x][y][z];`: Meminta input dari pengguna dan menyimpannya pada elemen array array[x][y][z].
-- `cout << endl;`: Menampilkan baris baru ke layar
-for (int x = 0; x < length; x++): Memulai perulangan `for` dengan nama variabel `x` dan batas `length`.
-- `for (int y = 0; y < width; y++)`: Memulai perulangan `for` dengan nama variabel `y` dan batas `width`.
-- `for (int z = 0; z < height; z++)`: Memulai perulangan `for` dengan nama variabel `z` dan batas `height`.
-- `cout << "Data Array[" << x << "][" << y << "][" << z << "] = " << array[x][y][z] << endl;`: Menampilkan tulisan "Data Array[x][y][z] = " dan nilai dari elemen array ke layar.
-- `for (int x = 0; x < length; x++)`: Memulai perulangan `for` dengan nama variabel `x` dan batas `length`.
-`for (int y = 0; y < width; y++)`: Memulai perulangan `for` dengan nama variabel `y` dan batas `width`.
-`for (int z = 0; z < height; z++)`: Memulai perulangan `for` dengan nama variabel `z` dan batas `height`.
-`cout << array[x][y][z] << " ";`: Menampilkan nilai dari elemen array.
+- `#include <iostream>`: Menggunakan
+library iostream untuk operasi input-output.
+- `#include <string>`: Menggunakan library string untuk bekerja dengan tipe data string.
+- `#include <cctype>`: Menggunakan library cctype untuk operasi terkait karakter.
+- `#include <unordered_set>`: Menggunakan library unordered_set untuk menggunakan struktur data set yang tidak berurutan.
+- `using namespace std;`: Menggunakan namespace std untuk mempermudah penggunaan elemen dari namespace tersebut.
+- `int countVowels(const string& sentence, unordered_set<char>& vowelsFound) {`: Mendefinisikan fungsi countVowels yang menghitung jumlah huruf vokal dalam sebuah kalimat dan menyimpan huruf vokal yang ditemukan dalam sebuah set.
+- `int main() {`: Mendefinisikan fungsi main() sebagai titik masuk utama untuk program.
+- `string sentence;`: Deklarasi variabel sentence untuk menyimpan kalimat yang dimasukkan oleh pengguna.
+- `unordered_set<char> vowelsFound;`: Deklarasi unordered_set vowelsFound untuk menyimpan huruf vokal yang ditemukan dalam kalimat.
+- `cout << "Masukkan kalimat: ";`: Menampilkan pesan meminta pengguna untuk memasukkan kalimat.
+getline(cin, sentence);: Membaca kalimat yang dimasukkan oleh pengguna dan menyimpannya dalam variabel sentence.
+int vowelCount = countVowels(sentence, vowelsFound);: Memanggil fungsi countVowels untuk menghitung jumlah huruf vokal dalam kalimat.
+cout << "Jumlah huruf vokal dalam kalimat tersebut adalah: " << vowelCount << endl;: Menampilkan jumlah huruf vokal yang ditemukan dalam kalimat.
+cout << "Huruf vokal yang ditemukan pada kalimat: ";: Menampilkan pesan sebelum menampilkan huruf vokal yang ditemukan.
+for (char ch : vowelsFound) { cout << ch << " "; }: Melakukan iterasi melalui set vowelsFound dan menampilkan setiap huruf vokal yang ditemukan.
+return 0;: Mengembalikan nilai 0, menandakan bahwa program berakhir dengan sukses.
 
 #### 3. Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma Sequential Search!
 
