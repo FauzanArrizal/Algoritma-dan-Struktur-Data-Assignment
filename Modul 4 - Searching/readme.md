@@ -317,46 +317,26 @@ int main() {
 
 Penjelasan:
 
-- `#include <iostream>` : Mendeklarasikan library input/output.
-- `using namespace std;` : Menggunakan nama dari namespace standar.
-- `int main()` : Memulai blok kode utama.
-- `int maks, a, i = 1, lokasi;` : Mendeklarasikan variabel yang digunakan.
-- `cout << "Masukkan Panjang array: ";` : Menampilkan text "Masukkan Panjang array: ".
-- `cin >> a;` : Meminta masukan panjang array dan disimpan ke variabel `a`.
-- `int array[a];` : Mendeklarasikan array dengan panjang `a`.
-- `cout << "Masukkan " << a << " angka\n";` : Menampilkan text "Masukkan " dan panjang array.
-- `for (i = 0; i < a; i++)` : Perulangan untuk input elemen array.
-- `cout << "Array ke-" << (i) << ": ";` : Menampilkan text "Array ke-" dan indeks
-- `cin >> array[i];` : Meminta masukan nilai elemen array.
-- `maks = array [0];` : Menginisialisasi variabel maksimum dengan elemen pertama array.
-- `lokasi = 0;` : Menginisialisasi variabel lokasi.
-- `for (i = 0; i < a; i++)` : Perulangan untuk mencari nilai maksimum.
-- `if (array[i] > maks)` : Membandingkan nilai elemen array dengan nilai maksimum.
-- `maks = array[i];` : Menetapkan nilai maksimum.
-- `lokasi = i;` : Menetapkan lokasi nilai maksimum.
-- `int min = array[0];` : Menginisialisasi variabel minimum dengan elemen pertama array.
-- `for (i = 0; i < a; i++)` : Perulangan untuk mencari nilai minimum.
-- `if (array[i] < min)` : Membandingkan nilai elemen array dengan nilai minimum.
-- `min = array[i];` : Menetapkan nilai minimum
-- `lokasi = i;` : Menetapkan lokasi nilai minimum.
-- `double sum = 0;` : Menginisialisasi variabel sum
-- `for (i = 0; i < a; i++)` : Perulangan untuk menjumlahkan semua elemen array.
-- `sum += array[i];` : Menjumlahkan nilai array.
-- `double average = sum / a;` : Menghitung rata-rata.
-- `cout << " Rata-rata nilai adalah " << average << endl;` : Menampilkan rata-rata.
-
+- `#include <iostream>`: Menggunakan library iostream untuk operasi input-output.
+- `#include <vector>`: Menggunakan library vector untuk menggunakan struktur data vector.
+- `using namespace std;`: Menggunakan namespace std untuk mempermudah penggunaan elemen dari namespace tersebut.
+- `int sequentialSearch(const vector<int>& data, int key) {`: Mendefinisikan fungsi sequentialSearch yang mengambil vector data dan integer key, dan mengembalikan jumlah kemunculan key dalam vector data.
+- `int count = 0;`: Mendeklarasikan variabel count untuk menghitung jumlah kemunculan key dalam vector.
+- `for (int num : data) {`: Melakukan iterasi melalui setiap elemen dalam vector data.
+- `if (num == key) { count++; }`: Memeriksa apakah elemen saat ini sama dengan key, jika ya, menambahkan nilai count.
+- `return count;`: Mengembalikan nilai count yang merupakan jumlah kemunculan key dalam vector data.
+- `int main() {`: Mendefinisikan fungsi main() sebagai titik masuk utama untuk program.
+- `vector<int> data = {9, 4, 1, 4, 7, 10, 5, 4, 12, 4};`: Mendefinisikan vector data yang berisi sejumlah nilai.
+- `int key = 4;`: Mendeklarasikan nilai key yang ingin dicari dalam vector.
+int count = sequentialSearch(data, key);: Memanggil fungsi sequentialSearch untuk mencari jumlah kemunculan key dalam vector data.
+- `cout << "Banyaknya angka " << key << " pada data adalah: " << count << endl;`: Menampilkan jumlah kemunculan key dalam vector data.
+- `return 0;`: Mengembalikan nilai 0, menandakan bahwa program berakhir dengan sukses.
 
 ## Kesimpulan
-Dalam pemrograman, array adalah struktur data yang memungkinkan penyimpanan kumpulan nilai data yang sama, diakses melalui indeks. Ada tiga jenis array: satu dimensi, dua dimensi, dan multidimensi. Array memiliki kelebihan seperti kemudahan akses acak dan efisiensi penyimpanan nilai independen. Namun, terdapat kekurangan seperti harus bertipe homogen dan sulit mengubah ukuran array statis pada waktu eksekusi. Meskipun demikian, array tetap menjadi salah satu struktur data yang efisien dalam banyak kasus pemrograman karena kemampuannya menyimpan dan mengakses data secara terstruktur.
+Searching merupakan proses pencarian data yang sesuai dengan kriteria yang ditentukan. Dua jenis utama dari algoritma searching adalah Sequential Search dan Binary Search. Sequential Search melakukan pencarian secara berurutan, sementara Binary Search menggunakan pendekatan divide and conquer pada data yang sudah terurut. Sequential Search cocok untuk data yang tidak terurut, sementara Binary Search lebih efisien untuk data yang terurut karena memanfaatkan sifat data yang terurut untuk proses pencarian yang lebih cepat.
 
 ## Referensi
 
-[1] Syaiful Anam, Indah Yanti, Zuraidah Fitriah, Ummu Habibah. *Cara Mudah Belajar Bahasa Pemrograman C++*. Malang: Universitas Brawijaya Press. 2021
+[1] Wanra Tarigan. *Algoritma Pemrograman dan Struktur Data*. Jawa Tengah: Aeureka Media Aksara. 2022
 
-[2] Rina Firliana, Patmi Kasih. *Algoritma & Pemrograman C++*. Nganjuk: Adjie Media Nusantara. 2018
-
-[3] M. Aldi Pratama. *STRUKTUR DATA ARRAY DUA DIMENSI PADA PEMROGRAMAN C++*. 29 Maret 2020. [online]. Available: https://osf.io/preprints/osf/vyech
-
-[4] Vivian Siahaan, Rismon Hasiholan Sianipar. *BUKU PINTAR Pemrograman C++ Untuk Pelajar dan Mahasiswa*. 15 Mar 2020. Sumatra Utara: Balige Publishing.
-
-[5] Angan Prawista. *Array pada C++*. Diakses pada 25 Maret 2024. [online]. Available: https://wistaprawista.wordpress.com/materi/algoritma-dan-struktur-data/array-pada-c/
+[2] Meidyan Permata Putri, Guntoro Barovih, Rezania Agramanisti Azdy, Yuniansyah, Andri Saputra, Yesi Sriyeni, Arsia Rini, Fadhila Tangguh Admojo. *Algoritma dan Struktur Data*. Bandung: Widina Bhakti Persada. 2022
