@@ -59,6 +59,12 @@ int main ()
     return 0;
 }
 ```
+
+Output:
+![Screenshot (373)](https://github.com/FauzanArrizal/Algoritma-dan-Struktur-Data-Assignment/assets/161549586/fdb90d93-d153-4488-bdb5-4927a682ee5e)
+
+Penjelasan:
+
 - `int n = 10;`: deklarasi variabel n dengan tipe data int dan nilai inisial 10. Variabel n akan digunakan untuk menyimpan jumlah elemen yang akan digunakan dalam array data.
 - `int data[n] = {9, 4, 1, 7, 5, 12, 4, 13, 4, 10};`: deklarasi array data dengan tipe data int dan jumlah elemen yang sama dengan nilai n. Array data akan digunakan untuk menyimpan data yang akan dicari.
 - `int cari = 10;`: variabel cari dengan tipe data int dan nilai inisial 10. Variabel cari akan digunakan untuk menyimpan data yang akan dicari.
@@ -150,6 +156,11 @@ int main() {
     return EXIT_SUCCESS;
 }
 ```
+Output:
+![Screenshot (374)](https://github.com/FauzanArrizal/Algoritma-dan-Struktur-Data-Assignment/assets/161549586/852b6541-5891-48aa-a308-bcd2a078b78f)
+
+Penjelasan:
+
 Program ini menggunakan algoritma selection sort dan binary search untuk mengurutkan dan mencari `data` dalam array data. Pengguna dapat memasukkan data yang ingin dicari, dan program akan menampilkan data yang telah diurutkan dan menunjukkan indeks dari data yang dicari.
 
 
@@ -200,7 +211,8 @@ int main() {
 }
 ```
 #### Output:
-![Screenshot (350)](https://github.com/FauzanArrizal/Algoritma-dan-Struktur-Data-Assignment/assets/161549586/f434bc15-cac1-414a-8940-601ea83ce2c2)
+![Screenshot (375)](https://github.com/FauzanArrizal/Algoritma-dan-Struktur-Data-Assignment/assets/161549586/a676217b-b64a-42e0-b055-306f667c0e1f)
+
 
 Penjelasan:
 
@@ -259,9 +271,7 @@ int main() {
 }
 ```
 Output:
-![Screenshot (351)](https://github.com/FauzanArrizal/Algoritma-dan-Struktur-Data-Assignment/assets/161549586/64e784f2-ab4c-40c7-bde5-1050b3e1b2f3)
-
-
+![Screenshot (377)](https://github.com/FauzanArrizal/Algoritma-dan-Struktur-Data-Assignment/assets/161549586/c0ab6c18-d3eb-44f2-9eac-f00287887731)
 
 Penjelasan:
 
@@ -313,7 +323,7 @@ int main() {
 }
 ```
 #### Output:
-![Screenshot (353)](https://github.com/FauzanArrizal/Algoritma-dan-Struktur-Data-Assignment/assets/161549586/548b8563-2182-4f4b-bd7b-5077cda07a71)
+![Screenshot (378)](https://github.com/FauzanArrizal/Algoritma-dan-Struktur-Data-Assignment/assets/161549586/dc716b4c-3cda-41ec-b0d8-f7f141fad598)
 
 Penjelasan:
 
