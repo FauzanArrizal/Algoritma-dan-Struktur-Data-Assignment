@@ -276,12 +276,12 @@ library iostream untuk operasi input-output.
 - `string sentence;`: Deklarasi variabel sentence untuk menyimpan kalimat yang dimasukkan oleh pengguna.
 - `unordered_set<char> vowelsFound;`: Deklarasi unordered_set vowelsFound untuk menyimpan huruf vokal yang ditemukan dalam kalimat.
 - `cout << "Masukkan kalimat: ";`: Menampilkan pesan meminta pengguna untuk memasukkan kalimat.
-getline(cin, sentence);: Membaca kalimat yang dimasukkan oleh pengguna dan menyimpannya dalam variabel sentence.
-int vowelCount = countVowels(sentence, vowelsFound);: Memanggil fungsi countVowels untuk menghitung jumlah huruf vokal dalam kalimat.
-cout << "Jumlah huruf vokal dalam kalimat tersebut adalah: " << vowelCount << endl;: Menampilkan jumlah huruf vokal yang ditemukan dalam kalimat.
-cout << "Huruf vokal yang ditemukan pada kalimat: ";: Menampilkan pesan sebelum menampilkan huruf vokal yang ditemukan.
-for (char ch : vowelsFound) { cout << ch << " "; }: Melakukan iterasi melalui set vowelsFound dan menampilkan setiap huruf vokal yang ditemukan.
-return 0;: Mengembalikan nilai 0, menandakan bahwa program berakhir dengan sukses.
+- `getline(cin, sentence);`: Membaca kalimat yang dimasukkan oleh pengguna dan menyimpannya dalam variabel sentence.
+- `int vowelCount = countVowels(sentence, vowelsFound);`: Memanggil fungsi countVowels untuk menghitung jumlah huruf vokal dalam kalimat.
+- `cout << "Jumlah huruf vokal dalam kalimat tersebut adalah: " << vowelCount << endl;`: Menampilkan jumlah huruf vokal yang ditemukan dalam kalimat.
+- `cout << "Huruf vokal yang ditemukan pada kalimat: ";`: Menampilkan pesan sebelum menampilkan huruf vokal yang ditemukan.
+- `for (char ch : vowelsFound) { cout << ch << " "; }`: Melakukan iterasi melalui set vowelsFound dan menampilkan setiap huruf vokal yang ditemukan.
+- `return 0;`: Mengembalikan nilai 0, menandakan bahwa program berakhir dengan sukses.
 
 #### 3. Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma Sequential Search!
 
