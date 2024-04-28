@@ -349,4 +349,4 @@ Searching merupakan proses pencarian data yang sesuai dengan kriteria yang diten
 
 [1] Wanra Tarigan. *Algoritma Pemrograman dan Struktur Data*. Jawa Tengah: Aeureka Media Aksara. 2022
 
-[2] Meidyan Permata Putri, Guntoro Barovih, Rezania Agramanisti Azdy, Yuniansyah, Andri Saputra, Yesi Sriyeni, Arsia Rini, Fadhila Tangguh Admojo. *Algoritma dan Struktur Data*. Bandung: Widina Bhakti Persada. 2022
+[2] Meidyan Permata Putri, Guntoro Barovih, Rezania Agramanisti Azdy, Yuniansyah, Andri Saputra, Yesi Sriyeni, Arsia Rini, Fadhila Tangguh Admojo.*Algoritma dan Struktur Data*. Bandung: Widina Bhakti Persada. 2022
