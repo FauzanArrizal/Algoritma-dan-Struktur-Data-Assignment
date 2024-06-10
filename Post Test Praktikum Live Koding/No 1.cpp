@@ -10,8 +10,7 @@ int main()
 
 }
 
-    
-    for (i = 0; i < n; i++) 
+{    for (i = 0; i < n; i++) 
     {
         if(data[i] == cari) 
         {
@@ -19,22 +18,4 @@ int main()
             break;
         }
     }
-
-
-
-
-
-
-
-
-
-{
-    
-    
-    
-    cout << "Berada pada index ke- " << endl;
-    
-    return 0;
-
 }
-  
