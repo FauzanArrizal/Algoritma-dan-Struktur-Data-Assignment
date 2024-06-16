@@ -24,29 +24,9 @@ n(n-1)/2.
 
 - Graf berbobot (weighted graph) adalah graf yang setiap sisinya diberi sebuah harga (bobot).
 
-#### 3. Kelebihan dan Kekurangan Rekursif
+#### 3. Kelebihan dan Kekurangan Graph 
 
-Kelebihan Rekursif:
-- Mudah dalam Implementasi: Rekursif dapat digunakan untuk menyelesaikan masalah yang kompleks dengan cara membagi masalah menjadi beberapa bagian yang lebih kecil dan menyelesaikan masing-masing bagian secara rekursif [3].
-- Efisiensi: Rekursif dapat digunakan untuk menyelesaikan masalah yang kompleks dengan cara membagi masalah menjadi beberapa bagian yang lebih kecil dan menyelesaikan masing-masing bagian secara rekursif [3].
-- Menghemat Ruang Memori: Rekursif dapat digunakan untuk menyelesaikan masalah yang kompleks dengan cara membagi masalah menjadi beberapa bagian yang lebih kecil dan menyelesaikan masing-masing bagian secara rekursif [3].
-
-Kekurangan Rekursif
-- Kemungkinan Overflow: Rekursif dapat menyebabkan overflow jika fungsi memanggil dirinya sendiri secara terus-menerus tanpa batas, sehingga dapat menyebabkan program crash [3].
-- Kemungkinan Error: Rekursif dapat menyebabkan error jika fungsi tidak didefinisikan dengan benar atau jika fungsi tidak dapat menyelesaikan masalah yang diberikan [3].
-- Kemungkinan Tidak Berhenti: Rekursif dapat menyebabkan fungsi tidak berhenti jika tidak ada kondisi yang membatasi pengulangan, sehingga dapat menyebabkan program tidak berhenti [3].
-
-#### 4. Base Case dan Recursive Case
-
-Base case adalah kondisi yang menentukan kapan rekursi harus berhenti. Jika tidak ada base case, maka akan terjadi infinite loop. Recursive case adalah bagian rekursif, di mana fungsi memanggil dirinya sendiri [4]
-
-#### 5. Demonstrasi Rekursi (recursion) dengan program Faktorial
-
-Untuk mendemonstrasikan sebuah rekursi, kita membuat program untuk menghitung nilai faktorial dari suatu bilangan bulat (integer).
-Faktorial dari suatu bilangan biasanya dilambangkan sebagai n!, yang mana n merupakan bilangan tersebut [2].
-
-contoh :
-5! = 5 x 4 x 3 x 2 x 1 = 120
+Tree:Struktur data tidak linear yang menggambarkan hubungan yang bersifat hirarkis antara elemen-elemen.Kumpulan elemen yang salah satu elemennya disebut dengan root (akar) dan sisa elemen yang lain disebut sebagai simpul (node/vertex) yang terpecah menjadi sejumlah himpunan yang tidak saling berhubungan satu sama lain, yang disebut subtree / cabang.Tidak terdapat siklus (cycle).Graph:Kumpulan noktah (simpul) di dalam bidang dua dimensi yang dihubungkan dengan sekumpulan garis (sisi).Dapat digunakan untuk merepresentasikan objek-objek diskrit dan hubungan antara objek-objek tersebut.Dapat memiliki siklus (cycle) dan tidak memiliki root.
 
 ## Guided
 
@@ -514,11 +494,9 @@ Rekursif adalah suatu konsep di mana suatu fungsi memanggil dirinya sendiri seca
 
 ## Referensi
 
-[1] Joseph Teguh Santoso. *Struktur Data dan Algoritma*. Yayasan Primaagus Teknik. Semarang. 2021
+[1] Andika Dimas Sasongko. *Aplikasi Algoritma Pohon Rentang Minimum pada Jaringan Sensor Nirkabel untuk Mengoptimalkan Konsumsi Daya*. 2023. Jurnal Sains dan Teknologi Universitas Islam Indonesia.
 
-
-[2] IDCSharp.com. *Rekursif (Recursions) Dalam Algoritma Pemrograman C/C++*. Available:
-https://koding123.blogspot.com/2016/03/belajer-bahasa-pemrograman-Recursion-dalam-algoritma.html
+[2] Daniel F,Taneo P. *Teori Graf*. 2019.Yogyakarta, CV Budi Utama
 
 [3] Dewi. *Pengertian, Jenis-jenis, Contoh, Kelebihan dan Kekurangan Struktur Data*. 2019. Available: https://dewikhrnnsa.blogspot.com/2019/02/pengertian-dan-jenis-jenis-struktur.html
 
