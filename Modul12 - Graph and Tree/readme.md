@@ -24,9 +24,9 @@ n(n-1)/2.
 
 - Graf berbobot (weighted graph) adalah graf yang setiap sisinya diberi sebuah harga (bobot) [2].
 
-#### 3. Kelebihan dan Kekurangan Rekursif
+#### 3. Kelebihan dan Kekurangan Graph
 
-Kelebihan Rekursif:
+Kelebihan Graph:
 - Graph membantu dalam mengatur data.
 - Graph digunakan untuk mengimplementasikan algoritma seperti DFS dan BFS.
 - Dengan menggunakan graph kita dapat dengan mudah menemukan jalur terpendek dan tetangga dari node.
