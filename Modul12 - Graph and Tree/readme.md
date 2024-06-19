@@ -12,21 +12,32 @@ Berdasarkan ada tidaknya gelang (loop) maupun sisi ganda pada suatu graf, maka g
 
 - Graf sederhana (simple graph) adalah graf yang tidak memiliki gelang dan sisi ganda. Graf tidak sederhana/multigraf (unsimple graph/ multigraph) adalah graf yang memiliki gelang dan atau sisi ganda [2].
 
-Berdasarkan orientasi arah pada sisi, maka secara umum graf dibedakan menjadi graf tak berarah dan graf berarah.
+Berdasarkan orientasi arah pada sisi, maka secara umum graf dibedakan menjadi graf tak berarah dan graf berarah [2].
 
-- Graf tak-berarah (undirected graph) adalah graf yang sisinya tidak mempunyai orientasi arah. Graf berarah (directed graph atau digraph) adalah graf yang setiap sisinya diberikan orientasi arah.
+- Graf tak-berarah (undirected graph) adalah graf yang sisinya tidak mempunyai orientasi arah. Graf berarah (directed graph atau digraph) adalah graf yang setiap sisinya diberikan orientasi arah [2].
 
 - Graf lengkap (complete graph) adalah graf sederhana dimana setiap pasang simpul yang berbeda terhubung oleh sebuah sisi. Graf lengkap dengan n buah simpul dilambangkan dengan K. 
 Jumlah sisi pada graf lengkap yang terdiri dari 1 buah simpul adalah
 n(n-1)/2.
 
-- Graf kosong (trivial) adalah graf yang tidak memiliki sisi.
+- Graf kosong (trivial) adalah graf yang tidak memiliki sisi [2].
 
-- Graf berbobot (weighted graph) adalah graf yang setiap sisinya diberi sebuah harga (bobot).
+- Graf berbobot (weighted graph) adalah graf yang setiap sisinya diberi sebuah harga (bobot) [2].
 
-#### 3. Kelebihan dan Kekurangan Graph 
+#### 3. Kelebihan dan Kekurangan Rekursif
 
-Tree:Struktur data tidak linear yang menggambarkan hubungan yang bersifat hirarkis antara elemen-elemen.Kumpulan elemen yang salah satu elemennya disebut dengan root (akar) dan sisa elemen yang lain disebut sebagai simpul (node/vertex) yang terpecah menjadi sejumlah himpunan yang tidak saling berhubungan satu sama lain, yang disebut subtree / cabang.Tidak terdapat siklus (cycle).Graph:Kumpulan noktah (simpul) di dalam bidang dua dimensi yang dihubungkan dengan sekumpulan garis (sisi).Dapat digunakan untuk merepresentasikan objek-objek diskrit dan hubungan antara objek-objek tersebut.Dapat memiliki siklus (cycle) dan tidak memiliki root.
+Kelebihan Rekursif:
+- Graph membantu dalam mengatur data.
+- Graph digunakan untuk mengimplementasikan algoritma seperti DFS dan BFS.
+- Dengan menggunakan graph kita dapat dengan mudah menemukan jalur terpendek dan tetangga dari node.
+- Karena strukturnya yang non-linier, membantu dalam memahami masalah yang kompleks dan visualisasinya.
+
+Kekurangan Grap:
+
+- Memiliki kompleksitas memori yang besar.
+- Graph menggunakan banyak pointer yang bisa rumit untuk ditangani.
+- Jika graph direpresentasikan dengan adjacency matrix maka edge tidak memungkinkan untuk sejajar dan operasi perkalian graph juga sulit dilakukan.
+
 
 ## Guided
 
@@ -490,15 +501,13 @@ Program ini menggunakan struktur `TNode` untuk menyimpan nilai node dan pointer 
 
 ## Kesimpulan
 
-Rekursif adalah suatu konsep di mana suatu fungsi memanggil dirinya sendiri secara terus-menerus hingga mencapai suatu kondisi dasar yang ditentukan. Rekursif digunakan untuk menyelesaikan masalah yang kompleks dengan cara membagi masalah menjadi beberapa bagian yang lebih kecil dan menyelesaikan masing-masing bagian secara rekursif. Kelebihan rekursif adalah mudah dalam implementasi, efisiensi, dan menghemat ruang memori, namun kekurangan rekursif adalah kemungkinan overflow, kemungkinan error, dan kemungkinan tidak berhenti. Rekursif langsung memanggil dirinya sendiri secara langsung, sedangkan rekursif tidak langsung memanggil dirinya sendiri secara tidak langsung melalui fungsi lain. Rekursif dapat digunakan untuk menyelesaikan masalah yang kompleks, seperti mencari nilai pangkat dan menghitung nilai faktorial, serta beberapa proses deret lainnya.
 
+Graph adalah struktur data non-linier yang terdiri dari simpul dan sisi, yang digunakan untuk merepresentasikan hubungan antar data dalam berbagai aplikasi kehidupan nyata seperti jejaring sosial. Berdasarkan karakteristiknya, graph dapat diklasifikasikan menjadi beberapa jenis seperti graf sederhana, graf tidak sederhana, graf berarah, graf tak-berarah, graf lengkap, graf kosong, dan graf berbobot. Penggunaan graph memiliki kelebihan dalam mengatur data, mengimplementasikan algoritma, dan menemukan jalur terpendek, namun juga memiliki kekurangan seperti kompleksitas memori yang besar dan penggunaan banyak pointer yang bisa rumit. Graph adalah alat yang efektif untuk memahami dan memvisualisasikan masalah yang kompleks.
 ## Referensi
 
-[1] Andika Dimas Sasongko. *Aplikasi Algoritma Pohon Rentang Minimum pada Jaringan Sensor Nirkabel untuk Mengoptimalkan Konsumsi Daya*. 2023. Jurnal Sains dan Teknologi Universitas Islam Indonesia.
+[1] Joseph Teguh Santoso. *Struktur Data dan Algoritma*. Yayasan Primaagus Teknik. Semarang. 2021
 
-[2] Daniel F,Taneo P. *Teori Graf*. 2019.Yogyakarta, CV Budi Utama
+[2] Dewi. *Pengertian, Jenis-jenis, Contoh, Kelebihan dan Kekurangan Struktur Data*. 2019. Available: https://dewikhrnnsa.blogspot.com/2019/02/pengertian-dan-jenis-jenis-struktur.html
 
-[3] Dewi. *Pengertian, Jenis-jenis, Contoh, Kelebihan dan Kekurangan Struktur Data*. 2019. Available: https://dewikhrnnsa.blogspot.com/2019/02/pengertian-dan-jenis-jenis-struktur.html
-
-[4] Fasilkom UI. *Dasar-Dasar Pemrograman 2*. Available: 
+[3] Fasilkom UI. *Dasar-Dasar Pemrograman 2*. Available: 
 http://elearning.ai-innovation.id/pluginfile.php/77/mod_resource/content/1/DDP2_04_Jumat.pdf
